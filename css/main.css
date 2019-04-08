@@ -1,0 +1,133 @@
+/**/
+nav.main-nav {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  background: Gray;
+  text-align: center;
+  justify-content: center;
+  height: 120px;
+}
+nav.main-nav ul {
+  background: Gainsboro ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.logo, .main-nav li, .topics {
+  display: grid;
+  align-content: center;
+}
+.logo, .nav-item{
+  padding: 10px;
+}
+.topics span{
+  border-radius: 6px;
+  border: 3px solid white;
+  margin: 14px;
+  font-size: 0.8em;
+}
+
+nav.articles {
+  position:relative;
+  background-color: DimGray;
+
+}
+
+.articles-cta {
+  position: absolute;
+  left: calc( 50% - 100px);
+  top: 30px;
+  font-size: 1.4em;
+  width: 200px;
+  text-align: center;
+
+}
+.articles-cta span {
+  background-color: white;
+  text-align: center;
+}
+.red {
+  background-color: dimGray;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  width: 150px;
+  font-size: 0.8em;
+}
+
+.article-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
+}
+.article-link {
+  background-color: darkGray;
+  color: white;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  padding: 40px;
+  grid-gap: 10px;
+  align-items: center;
+  align-content: center;
+
+}
+.article-link:nth-child(1), .article-link:nth-child(2) {
+  padding-top: 150px;
+}
+.article-link:nth-child(2) {
+  background-color: Silver;
+}
+.article-link:nth-child(3) {
+  background-color: Gray;
+}
+.article-title {
+  font-size: 1.5em;
+  background-color: black;
+}
+.author {
+  background-color: slateGray
+}
+
+.vertical {
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  transform-origin: 25px 25px;
+  width: 240px;
+  height: 60px;
+  z-index: 1;
+  background-color: slateGray;
+  padding-left: 20px;
+  font-size: 0.75em;
+}
+.latest {
+  background-color: Gainsboro;
+  padding-left: 70px;
+  margin-top: -60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.recent-article {
+  display:grid;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 25px 15px 20px 10px;
+}
+.days-ago {
+  background-color:LightGray;
+  font-size: 0.8em;
+}
+.recent-article h1 {
+  background-color: Black;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.byline {
+  background-color: silver;
+}
+footer {
+  padding: 40px 50px;
+  background-color: silver;
+}
